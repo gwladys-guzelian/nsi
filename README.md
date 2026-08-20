@@ -1,29 +1,40 @@
-# Site NSI avec MkDocs Material
+# Site NSI simple
 
-## Tester en local
+Ce site ne nécessite ni MkDocs, ni workflow, ni Python.
 
-```bash
-python3 -m pip install -r requirements.txt
-mkdocs serve
+## Publication sur GitHub Pages
+
+1. Déposez `index.html`, `style.css` et `script.js` à la racine du dépôt GitHub `nsi`.
+2. Ouvrez `Settings` → `Pages`.
+3. Dans `Build and deployment`, choisissez :
+   - Source : `Deploy from a branch`
+   - Branch : `main`
+   - Folder : `/ (root)`
+4. Cliquez sur `Save`.
+
+Le site sera accessible à :
+https://gwladys-guzelian.github.io/nsi/
+
+## Modifier un lien
+
+Dans `index.html`, remplacez simplement :
+
+```html
+<a href="#">📖 Cours</a>
 ```
 
-Puis ouvrir l'adresse indiquée dans le terminal (souvent http://127.0.0.1:8000).
+par exemple par :
 
-## Publier sur GitHub
-
-1. Créer un dépôt GitHub nommé `nsi`.
-2. Copier tout ce dossier dans le dépôt.
-3. Dans `mkdocs.yml`, remplacer `VOTRE_COMPTE` par votre identifiant GitHub.
-4. Envoyer les fichiers sur GitHub.
-5. Dans GitHub : Settings → Pages → Source → GitHub Actions.
-6. Le workflow fourni publiera le site automatiquement.
-
-Adresse finale :
-
-```text
-https://VOTRE_COMPTE.github.io/nsi/
+```html
+<a href="documents/recursivite-cours.pdf">📖 Cours</a>
 ```
 
-## Corrigés
+ou par un lien externe :
 
-Ne mettez pas les corrigés sensibles dans ce dépôt public. Gardez-les dans un dépôt privé séparé.
+```html
+<a href="https://...">🔗 Capytale</a>
+```
+
+## Ajouter un chapitre
+
+Copiez un bloc `<article class="card resource-card"> ... </article>` puis modifiez le titre, la description et les liens.

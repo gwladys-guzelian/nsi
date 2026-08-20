@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSI – Cours et exercices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">NSI</p>
+      <h1>Cours, exercices et notebooks</h1>
+      <p class="subtitle">Ressources de Première et Terminale NSI</p>
+
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Rechercher un chapitre…" aria-label="Rechercher">
+      </div>
+
+      <nav class="level-nav">
+        <button class="filter active" data-filter="all">Tout</button>
+        <button class="filter" data-filter="premiere">Première</button>
+        <button class="filter" data-filter="terminale">Terminale</button>
+        <button class="filter" data-filter="bac">Bac</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <div class="section-title">
+        <h2>Première NSI</h2>
+        <p>Les bases de la programmation et de l’informatique.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card resource-card" data-level="premiere" data-search="python variables fonctions conditions boucles">
+          <div class="icon">🐍</div>
+          <h3>Python</h3>
+          <p>Variables, conditions, boucles et fonctions.</p>
+          <div class="links">
+            <a href="#">📖 Cours</a>
+            <a href="#">📝 Exercices</a>
+            <a href="#">💻 Notebook</a>
+          </div>
+        </article>
+
+        <article class="card resource-card" data-level="premiere" data-search="réseaux internet tcp ip dns routeur switch">
+          <div class="icon">🌐</div>
+          <h3>Réseaux</h3>
+          <p>Internet, TCP/IP, DNS, routeurs et paquets.</p>
+          <div class="links">
+            <a href="#">📖 Cours</a>
+            <a href="#">📝 Exercices</a>
+            <a href="#">🔗 Ressources</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Terminale NSI</h2>
+        <p>Programmation, structures de données et préparation au bac.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card resource-card" data-level="terminale" data-search="récursivité récursif fibonacci factorielle">
+          <div class="icon">🔁</div>
+          <h3>Récursivité</h3>
+          <p>Cas de base, appels récursifs, pile d’appels et exercices.</p>
+          <div class="links">
+            <a href="#">📖 Cours</a>
+            <a href="#">📝 Exercices</a>
+            <a href="#">💻 Notebook</a>
+            <a href="#">🎯 Annales</a>
+          </div>
+        </article>
+
+        <article class="card resource-card" data-level="terminale" data-search="arbres racine feuille noeud parcours binaire">
+          <div class="icon">🌳</div>
+          <h3>Arbres</h3>
+          <p>Vocabulaire, représentation et parcours d’arbres.</p>
+          <div class="links">
+            <a href="#">📖 Cours</a>
+            <a href="#">📝 Exercices</a>
+            <a href="#">💻 Notebook</a>
+            <a href="#">🎯 Annales</a>
+          </div>
+        </article>
+
+        <article class="card resource-card" data-level="terminale" data-search="graphes sommets arêtes parcours bfs dfs">
+          <div class="icon">🕸️</div>
+          <h3>Graphes</h3>
+          <p>Sommets, arêtes, parcours et applications.</p>
+          <div class="links">
+            <a href="#">📖 Cours</a>
+            <a href="#">📝 Exercices</a>
+            <a href="#">🎯 Annales</a>
+          </div>
+        </article>
+
+        <article class="card resource-card" data-level="terminale" data-search="paradigmes impératif objet fonctionnel procédural récursivité">
+          <div class="icon">⚙️</div>
+          <h3>Paradigmes</h3>
+          <p>Impératif, objet, fonctionnel et techniques de programmation.</p>
+          <div class="links">
+            <a href="#">📖 Cours</a>
+            <a href="#">📝 Exercices</a>
+            <a href="#">💻 Notebook</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Révisions Bac</h2>
+        <p>Annales, entraînements et ressources utiles.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card resource-card" data-level="bac" data-search="bac annales sujets exercices">
+          <div class="icon">🎯</div>
+          <h3>Annales</h3>
+          <p>Sujets classés par thème pour s’entraîner progressivement.</p>
+          <div class="links">
+            <a href="#">📚 Sujets</a>
+            <a href="#">🧭 Par thème</a>
+          </div>
+        </article>
+
+        <article class="card resource-card" data-level="bac" data-search="capytale basthon pix liens utiles">
+          <div class="icon">🔗</div>
+          <h3>Liens utiles</h3>
+          <p>Accès rapide aux plateformes utilisées en cours.</p>
+          <div class="links">
+            <a href="#">Capytale</a>
+            <a href="#">Basthon</a>
+            <a href="#">Pix</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div id="no-result" class="no-result" hidden>
+      Aucun chapitre ne correspond à votre recherche.
+    </div>
+  </main>
+
+  <footer>
+    <p>Site de ressources NSI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
