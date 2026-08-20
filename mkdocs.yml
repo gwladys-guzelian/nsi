@@ -1,0 +1,72 @@
+site_name: NSI – Cours et exercices
+site_description: Ressources de Première et Terminale NSI
+site_url: https://VOTRE_COMPTE.github.io/nsi/
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+
+plugins:
+  - search:
+      lang: fr
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Accueil: index.md
+  - Première NSI:
+      - Sommaire: premiere/index.md
+      - Python:
+          - Cours: premiere/python/cours.md
+          - Exercices: premiere/python/exercices.md
+      - Réseaux:
+          - Cours: premiere/reseaux/cours.md
+          - Exercices: premiere/reseaux/exercices.md
+  - Terminale NSI:
+      - Sommaire: terminale/index.md
+      - Structures de données:
+          - Arbres:
+              - Cours: terminale/arbres/cours.md
+              - Exercices: terminale/arbres/exercices.md
+      - Programmation:
+          - Récursivité:
+              - Cours: terminale/recursivite/cours.md
+              - Exercices: terminale/recursivite/exercices.md
+          - Paradigmes et techniques:
+              - Cours: terminale/paradigmes/cours.md
+              - Exercices: terminale/paradigmes/exercices.md
+  - Révisions Bac:
+      - Annales: bac/annales.md
+      - Liens utiles: bac/liens.md
+  - Liens utiles: liens.md
